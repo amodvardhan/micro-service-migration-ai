@@ -4,6 +4,7 @@ import git
 from typing import Dict, Any, List
 import glob
 from app.core.llm_service import LLMService
+from app.knowledge.embedding_manager import EmbeddingManager
 
 class CodeParser:
     """Parses code files from a repository"""
@@ -66,9 +67,10 @@ class CodeParser:
 class CodeAnalysisAgent:
     """Agent for analyzing code repositories"""
     
-    def __init__(self, llm_service: LLMService):
-        """Initialize the agent with the LLM service"""
+    def __init__(self, llm_service: LLMService, embedding_manager: EmbeddingManager):
+        """Initialize the agent with the LLM service and embedding manager"""
         self.llm_service = llm_service
+        self.embedding_manager = embedding_manager
         self.code_parser = CodeParser()
         
     async def analyze_repository(self, repo_url: str) -> Dict[str, Any]:
@@ -79,22 +81,19 @@ class CodeAnalysisAgent:
         # Parse code files
         parsed_files = await self.code_parser.parse_directory(repo_path)
         
-        # Generate code embeddings for semantic understanding
-        # This is a simplified version - in a real implementation,
-        # you would process files in batches to avoid token limits
-        sample_files = self._select_representative_files(parsed_files)
-        file_contents = [file_info['content'] for file_info in sample_files.values()]
+        # Process embeddings for all files
+        embedding_results = await self.embedding_manager.process_codebase(parsed_files)
         
-        # Generate embeddings
-        # Note: This is commented out to avoid making API calls during setup
-        # embeddings = await self.llm_service.generate_embeddings(file_contents)
+        # Select representative files for LLM analysis
+        sample_files = self._select_representative_files(parsed_files)
         
         # Use LLM to analyze dependencies and patterns
-        analysis_results = await self._analyze_with_llm(parsed_files)
+        analysis_results = await self._analyze_with_llm(sample_files)
         
         return {
             'repo_path': repo_path,
             'parsed_files': parsed_files,
+            'embedding_results': embedding_results,
             'analysis_results': analysis_results
         }
         

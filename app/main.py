@@ -4,6 +4,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import os
 from dotenv import load_dotenv
+from app.knowledge.vector_store import VectorStore
+from app.knowledge.embedding_manager import EmbeddingManager
 
 # Load environment variables
 load_dotenv()
@@ -28,11 +30,17 @@ from app.agents.developer import DeveloperAgent
 # Create LLM service
 llm_service = LLMService(model="gpt-4.1-mini")
 
+# Initialize vector store
+vector_store = VectorStore(collection_name="code_embeddings", persist_directory="./data/chroma_db")
+
+# Initialize embedding manager
+embedding_manager = EmbeddingManager(llm_service, vector_store)
+
 # Create agent orchestrator
 orchestrator = AgentOrchestrator(llm_service)
 
 # Create and register agents
-analyzer = CodeAnalysisAgent(llm_service)
+analyzer = CodeAnalysisAgent(llm_service, embedding_manager)
 architect = ArchitectAgent(llm_service)
 developer = DeveloperAgent(llm_service)
 

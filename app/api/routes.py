@@ -4,6 +4,10 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
 import os
 
+from app.models.SearchRequestModel import SearchRequest
+
+
+
 router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
@@ -34,3 +38,14 @@ async def analyze_repository(request: RepositoryRequest, background_tasks: Backg
     background_tasks.add_task(orchestrator.process_codebase, request.repo_url)
     
     return {"status": "Analysis started", "repo_url": request.repo_url}
+
+@router.post("/api/search")
+async def search_code(request: SearchRequest):
+    """Search for code semantically"""
+    if not orchestrator or not hasattr(orchestrator.agents.get('analyzer', {}), 'embedding_manager'):
+        raise HTTPException(status_code=500, detail="Embedding manager not initialized")
+        
+    embedding_manager = orchestrator.agents['analyzer'].embedding_manager
+    results = await embedding_manager.find_similar_code(request.query, request.top_k)
+    
+    return results
