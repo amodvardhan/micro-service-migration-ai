@@ -1,0 +1,141 @@
+2025-04-27 15:20:57,907 - app.main - INFO - Initializing application services
+2025-04-27 15:20:57,908 - app.main - INFO - Initializing vector database
+2025-04-27 15:20:58,291 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:20:58,291 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:20:58,291 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:20:58,291 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:20:58,291 - app.main - INFO - Application initialization complete
+2025-04-27 15:20:58,336 - app.main - WARNING - Directory app/static/dist does not exist. Static files will not be served.
+2025-04-27 15:21:22,543 - app.main - INFO - Initializing application services
+2025-04-27 15:21:22,543 - app.main - INFO - Initializing vector database
+2025-04-27 15:21:22,779 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:21:22,779 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:21:22,779 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:21:22,779 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:21:22,779 - app.main - INFO - Application initialization complete
+2025-04-27 15:21:22,815 - app.main - WARNING - Directory app/static/dist does not exist. Static files will not be served.
+2025-04-27 15:21:49,030 - app.main - INFO - Initializing application services
+2025-04-27 15:21:49,030 - app.main - INFO - Initializing vector database
+2025-04-27 15:21:49,360 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:21:49,360 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:21:49,360 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:21:49,360 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:21:49,360 - app.main - INFO - Application initialization complete
+2025-04-27 15:21:49,406 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:25:43,492 - app.main - INFO - Initializing application services
+2025-04-27 15:25:43,493 - app.main - INFO - Initializing vector database
+2025-04-27 15:25:43,815 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:25:43,815 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:25:43,815 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:25:43,815 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:25:43,815 - app.main - INFO - Application initialization complete
+2025-04-27 15:25:43,864 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:25:50,585 - app.main - INFO - Initializing application services
+2025-04-27 15:25:50,585 - app.main - INFO - Initializing vector database
+2025-04-27 15:25:50,808 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:25:50,808 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:25:50,808 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:25:50,808 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:25:50,808 - app.main - INFO - Application initialization complete
+2025-04-27 15:25:50,845 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:27:23,865 - app.main - INFO - Initializing application services
+2025-04-27 15:27:23,866 - app.main - INFO - Initializing vector database
+2025-04-27 15:27:24,176 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:27:24,176 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:27:24,176 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:27:24,176 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:27:24,176 - app.main - INFO - Application initialization complete
+2025-04-27 15:27:24,227 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:27:43,443 - app.main - INFO - Initializing application services
+2025-04-27 15:27:43,444 - app.main - INFO - Initializing vector database
+2025-04-27 15:27:43,677 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:27:43,677 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:27:43,677 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:27:43,677 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:27:43,678 - app.main - INFO - Application initialization complete
+2025-04-27 15:27:43,713 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:29:27,739 - app.main - INFO - Initializing application services
+2025-04-27 15:29:27,739 - app.main - INFO - Initializing vector database
+2025-04-27 15:29:28,062 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:29:28,062 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:29:28,063 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:29:28,063 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:29:28,063 - app.main - INFO - Application initialization complete
+2025-04-27 15:29:28,110 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:29:32,156 - app.main - INFO - Initializing application services
+2025-04-27 15:29:32,156 - app.main - INFO - Initializing vector database
+2025-04-27 15:29:32,402 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:29:32,402 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:29:32,402 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:29:32,402 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:29:32,402 - app.main - INFO - Application initialization complete
+2025-04-27 15:29:32,453 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:29:43,107 - app.main - INFO - Initializing application services
+2025-04-27 15:29:43,107 - app.main - INFO - Initializing vector database
+2025-04-27 15:29:43,346 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:29:43,346 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:29:43,346 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:29:43,346 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:29:43,346 - app.main - INFO - Application initialization complete
+2025-04-27 15:29:43,382 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:29:59,214 - app.main - INFO - Initializing application services
+2025-04-27 15:29:59,214 - app.main - INFO - Initializing vector database
+2025-04-27 15:29:59,455 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:29:59,456 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:29:59,456 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:29:59,456 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:29:59,456 - app.main - INFO - Application initialization complete
+2025-04-27 15:29:59,494 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:30:09,471 - app.main - INFO - Initializing application services
+2025-04-27 15:30:09,472 - app.main - INFO - Initializing vector database
+2025-04-27 15:30:09,699 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:30:09,699 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:30:09,699 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:30:09,699 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:30:09,699 - app.main - INFO - Application initialization complete
+2025-04-27 15:30:09,735 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:30:40,131 - app.main - INFO - Initializing application services
+2025-04-27 15:30:40,131 - app.main - INFO - Initializing vector database
+2025-04-27 15:30:40,393 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:30:40,393 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:30:40,393 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:30:40,393 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:30:40,393 - app.main - INFO - Application initialization complete
+2025-04-27 15:30:40,440 - app.main - INFO - Checking for static files in static/dist
+2025-04-27 15:30:40,440 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:31:29,583 - app.main - INFO - Initializing application services
+2025-04-27 15:31:29,583 - app.main - INFO - Initializing vector database
+2025-04-27 15:31:29,864 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:31:29,864 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:31:29,864 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:31:29,864 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:31:29,864 - app.main - INFO - Application initialization complete
+2025-04-27 15:31:29,912 - app.main - INFO - Checking for static files in static/dist
+2025-04-27 15:31:29,913 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:31:35,338 - app.main - INFO - Initializing application services
+2025-04-27 15:31:35,338 - app.main - INFO - Initializing vector database
+2025-04-27 15:31:35,580 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:31:35,580 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:31:35,580 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:31:35,580 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:31:35,581 - app.main - INFO - Application initialization complete
+2025-04-27 15:31:35,616 - app.main - INFO - Checking for static files in static/dist
+2025-04-27 15:31:35,617 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:36:30,021 - app.main - INFO - Checking for static files in static/dist
+2025-04-27 15:36:30,022 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:36:30,023 - app.main - INFO - Initializing application services
+2025-04-27 15:36:30,023 - app.main - INFO - Initializing vector database
+2025-04-27 15:36:30,427 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:36:30,428 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:36:30,428 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:36:30,428 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:36:30,428 - app.main - INFO - Application initialization complete
+2025-04-27 15:36:32,497 - app.main - INFO - Checking for static files in static/dist
+2025-04-27 15:36:32,498 - app.main - INFO - Static files mounted from static/dist
+2025-04-27 15:36:32,498 - app.main - INFO - Initializing application services
+2025-04-27 15:36:32,499 - app.main - INFO - Initializing vector database
+2025-04-27 15:36:32,742 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-27 15:36:32,742 - app.main - INFO - Initializing embedding manager
+2025-04-27 15:36:32,742 - app.main - INFO - Creating agent orchestrator
+2025-04-27 15:36:32,742 - app.main - INFO - Initializing and registering AI agents
+2025-04-27 15:36:32,742 - app.main - INFO - Application initialization complete
