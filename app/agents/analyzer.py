@@ -5,6 +5,12 @@ from typing import Dict, Any, List
 import glob
 from app.core.llm_service import LLMService
 from app.knowledge.embedding_manager import EmbeddingManager
+from app.core.code_analyzer import CodeAnalyzer
+import logging
+
+# Set up logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 class CodeParser:
     """Parses code files from a repository"""
@@ -65,94 +71,188 @@ class CodeParser:
         return code_files
 
 class CodeAnalysisAgent:
-    """Agent for analyzing code repositories"""
+    """Agent for analyzing code repositories with enhanced embedding capabilities"""
     
     def __init__(self, llm_service: LLMService, embedding_manager: EmbeddingManager):
         """Initialize the agent with the LLM service and embedding manager"""
         self.llm_service = llm_service
         self.embedding_manager = embedding_manager
         self.code_parser = CodeParser()
+        self.code_analyzer = CodeAnalyzer() 
         
     async def analyze_repository(self, repo_url: str) -> Dict[str, Any]:
         """Analyze a code repository to understand its structure"""
-        # Clone repository
-        repo_path = await self.code_parser.clone_repository(repo_url)
-        
-        # Parse code files
-        parsed_files = await self.code_parser.parse_directory(repo_path)
-        
-        # Process embeddings for all files
-        embedding_results = await self.embedding_manager.process_codebase(parsed_files)
-        
-        # Select representative files for LLM analysis
-        sample_files = self._select_representative_files(parsed_files)
-        
-        # Use LLM to analyze dependencies and patterns
-        analysis_results = await self._analyze_with_llm(sample_files)
+        try:
+            # Clone repository
+            logger.info(f"Cloning repository: {repo_url}")
+            repo_path = await self.code_parser.clone_repository(repo_url)
+            
+            # Parse code files
+            logger.info(f"Parsing code files from repository")
+            parsed_files = await self.code_parser.parse_directory(repo_path)
+            logger.info(f"Found {len(parsed_files)} files in repository")
+            
+            # Process embeddings for all files
+            logger.info("Generating and storing embeddings for code files")
+            embedding_results = await self.embedding_manager.process_codebase(parsed_files)
+            logger.info(f"Processed {embedding_results['processed_files']} files for embeddings")
+            
+            # Perform static code analysis
+            logger.info("Performing static code analysis")
+            static_analysis = await self.code_analyzer.analyze_codebase(parsed_files)
+            logger.info(f"Identified {len(static_analysis['entities'])} entities and {len(static_analysis['potential_services'])} potential services")
+            
+            # Select representative files for LLM analysis
+            sample_files = self._select_representative_files(parsed_files)
+            
+            # Use LLM to analyze dependencies and patterns
+            logger.info("Analyzing code structure and dependencies with LLM")
+            llm_analysis = await self._analyze_with_llm(sample_files, static_analysis)
+            
+            # Combine static analysis with LLM insights
+            analysis_results = self._combine_analysis_results(static_analysis, llm_analysis)
+            
+            # Enhance analysis with semantic similarity insights
+            if embedding_results["processed_files"] > 0:
+                logger.info("Enhancing analysis with semantic similarity insights")
+                semantic_insights = await self._generate_semantic_insights(parsed_files, embedding_results)
+                analysis_results["semantic_insights"] = semantic_insights
+            
+            logger.info("Repository analysis completed successfully")
+            return {
+                'repo_path': repo_path,
+                'parsed_files': parsed_files,
+                'embedding_results': embedding_results,
+                'analysis_results': analysis_results
+            }
+        except Exception as e:
+            logger.error(f"Error analyzing repository: {str(e)}")
+            raise
+    
+    async def _generate_semantic_insights(self, parsed_files: Dict[str, Any], 
+                                       embedding_results: Dict[str, Any]) -> Dict[str, Any]:
+        """Generate semantic insights based on code embeddings"""
+        # This is a placeholder - in a real implementation, you would:
+        # 1. Identify clusters of semantically similar files
+        # 2. Find potential service boundaries based on semantic similarity
+        # 3. Identify code duplication or reuse opportunities
         
         return {
-            'repo_path': repo_path,
-            'parsed_files': parsed_files,
-            'embedding_results': embedding_results,
-            'analysis_results': analysis_results
+            "similar_file_groups": [],
+            "potential_boundaries": [],
+            "duplication_candidates": []
         }
+    
+    def _combine_analysis_results(self, static_analysis: Dict[str, Any], llm_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """Combine static analysis with LLM insights"""
+        combined = {**static_analysis}
         
-    def _select_representative_files(self, parsed_files: Dict[str, Any]) -> Dict[str, Any]:
-        """Select a representative subset of files for analysis"""
-        # This is a simplified version - in a real implementation,
-        # you would use more sophisticated selection criteria
-        sample_size = min(10, len(parsed_files))
-        sample_files = {}
-        
-        for i, (file_path, file_info) in enumerate(parsed_files.items()):
-            if i >= sample_size:
-                break
-            sample_files[file_path] = file_info
+        # Merge potential services, giving priority to LLM suggestions
+        llm_services = llm_analysis.get("potential_services", [])
+        if llm_services:
+            # Create a mapping of service names from static analysis
+            static_service_map = {s["name"]: s for s in static_analysis.get("potential_services", [])}
             
-        return sample_files
+            # Merge or add LLM services
+            merged_services = []
+            for llm_service in llm_services:
+                service_name = llm_service["name"]
+                if service_name in static_service_map:
+                    # Merge with static analysis service
+                    merged_service = {**static_service_map[service_name], **llm_service}
+                    # Ensure we keep all entities
+                    merged_service["entities"] = list(set(
+                        static_service_map[service_name].get("entities", []) + 
+                        llm_service.get("entities", [])
+                    ))
+                    merged_services.append(merged_service)
+                else:
+                    merged_services.append(llm_service)
+            
+            # Add any static services not covered by LLM
+            for static_service in static_analysis.get("potential_services", []):
+                if static_service["name"] not in [s["name"] for s in merged_services]:
+                    merged_services.append(static_service)
+            
+            combined["potential_services"] = merged_services
         
-    async def _analyze_with_llm(self, parsed_files: Dict[str, Any]) -> Dict[str, Any]:
-        """Analyze code files with the LLM"""
-        # Select a subset of files for the initial analysis
-        sample_files = self._select_representative_files(parsed_files)
+        # Add LLM-specific insights
+        combined["architecture_type"] = llm_analysis.get("architecture_type", "Unknown")
+        combined["architecture_insights"] = llm_analysis.get("architecture_insights", {})
         
+        return combined
+    
+    async def _analyze_with_llm(self, sample_files: Dict[str, Any], static_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze code files with the LLM, incorporating static analysis results"""
         # Prepare the prompt
-        prompt = self._prepare_analysis_prompt(sample_files)
+        prompt = self._prepare_analysis_prompt(sample_files, static_analysis)
         
         # Get analysis from LLM
-        # Note: This is a simplified version to avoid making API calls during setup
-        # analysis = await self.llm_service.generate_completion(prompt)
+        analysis_response = await self.llm_service.generate_completion(prompt)
         
-        # For now, return a placeholder
-        return {
-            'architecture_type': 'monolith',
-            'languages': ['C#'],
-            'frameworks': ['.NET'],
-            'potential_services': [
-                {'name': 'UserService', 'files': []},
-                {'name': 'ProductService', 'files': []},
-                {'name': 'OrderService', 'files': []}
-            ]
-        }
+        # Parse the LLM response
+        try:
+            # Extract structured information from the LLM response
+            content = analysis_response.get("content", "")
+            
+            # For now, return a placeholder
+            # In a real implementation, you would parse the LLM response
+            return {
+                'architecture_type': 'monolith',
+                'architecture_insights': {
+                    'coupling': 'high',
+                    'cohesion': 'low',
+                    'scalability_issues': ['shared database', 'tight coupling']
+                },
+                'potential_services': [
+                    {'name': 'UserService', 'entities': ['User', 'UserProfile', 'Role'], 'responsibilities': ['Authentication', 'User Management']},
+                    {'name': 'ProductService', 'entities': ['Product', 'Category', 'Inventory'], 'responsibilities': ['Product Catalog', 'Inventory Management']},
+                    {'name': 'OrderService', 'entities': ['Order', 'OrderItem', 'Payment'], 'responsibilities': ['Order Processing', 'Payment Handling']}
+                ]
+            }
+        except Exception as e:
+            logger.error(f"Error parsing LLM response: {str(e)}")
+            return {}
+    
+    def _prepare_analysis_prompt(self, sample_files: Dict[str, Any], static_analysis: Dict[str, Any]) -> str:
+        """Prepare a prompt for code analysis, incorporating static analysis results"""
+        prompt = "Analyze the following code files and static analysis results to understand the architecture and identify potential microservice boundaries:\n\n"
         
-    def _prepare_analysis_prompt(self, sample_files: Dict[str, Any]) -> str:
-        """Prepare a prompt for code analysis"""
-        prompt = "Analyze the following code files to understand the architecture and identify potential microservice boundaries:\n\n"
+        # Add static analysis summary
+        prompt += "## Static Analysis Summary\n"
+        prompt += f"- Found {len(static_analysis.get('entities', []))} entities\n"
+        prompt += f"- Found {len(static_analysis.get('api_endpoints', []))} API endpoints\n"
+        prompt += f"- Found {len(static_analysis.get('namespaces', {}))} namespaces\n"
+        prompt += f"- Identified {len(static_analysis.get('potential_services', []))} potential services\n\n"
         
-        for file_path, file_info in sample_files.items():
+        # Add potential services from static analysis
+        prompt += "## Potential Services Identified by Static Analysis\n"
+        for service in static_analysis.get('potential_services', [])[:5]:  # Limit to 5 for brevity
+            prompt += f"- {service.get('name')}\n"
+            prompt += f"  - Namespace: {service.get('namespace')}\n"
+            prompt += f"  - Entities: {', '.join(service.get('entities', []))}\n"
+        prompt += "\n"
+        
+        # Add sample files
+        prompt += "## Sample Code Files\n"
+        for file_path, file_info in list(sample_files.items())[:3]:  # Limit to 3 files for token management
             prompt += f"File: {file_path}\n"
             prompt += f"```\n"
             
             # Limit content length to avoid token limits
-            content = file_info['content']
+            content = file_info.get('content', '')
             if len(content) > 1000:
                 content = content[:1000] + "...[truncated]"
                 
             prompt += content + "\n```\n\n"
-            
+        
         prompt += "Please provide the following information:\n"
         prompt += "1. What type of architecture is this (monolith, microservices, etc.)?\n"
-        prompt += "2. What languages and frameworks are used?\n"
-        prompt += "3. Identify potential microservice boundaries based on the code.\n"
+        prompt += "2. What are the key architectural insights (coupling, cohesion, scalability issues)?\n"
+        prompt += "3. Identify potential microservice boundaries based on the code and static analysis.\n"
+        prompt += "4. For each potential microservice, list:\n"
+        prompt += "   a. Service name\n"
+        prompt += "   b. Core entities/models\n"
+        prompt += "   c. Key responsibilities\n"
         
         return prompt

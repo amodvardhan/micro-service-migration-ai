@@ -7,6 +7,26 @@ from dotenv import load_dotenv
 from app.knowledge.vector_store import VectorStore
 from app.knowledge.embedding_manager import EmbeddingManager
 
+import logging
+# Initialize services and agents
+from app.core.llm_service import LLMService
+from app.agents.orchestrator import AgentOrchestrator
+from app.agents.analyzer import CodeAnalysisAgent
+from app.agents.architect import ArchitectAgent
+from app.agents.developer import DeveloperAgent
+from app.core.code_analyzer import CodeAnalyzer
+
+# Set up logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("app.log")
+    ]
+)
+logger = logging.getLogger(__name__)
+
 # Load environment variables
 load_dotenv()
 
@@ -20,26 +40,26 @@ app = FastAPI(
 # Mount static files
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
-# Initialize services and agents
-from app.core.llm_service import LLMService
-from app.agents.orchestrator import AgentOrchestrator
-from app.agents.analyzer import CodeAnalysisAgent
-from app.agents.architect import ArchitectAgent
-from app.agents.developer import DeveloperAgent
+
 
 # Create LLM service
+logger.info("Initializing application services")
 llm_service = LLMService(model="gpt-4.1-mini")
 
 # Initialize vector store
+logger.info("Initializing vector database")
 vector_store = VectorStore(collection_name="code_embeddings", persist_directory="./data/chroma_db")
 
 # Initialize embedding manager
+logger.info("Initializing embedding manager")
 embedding_manager = EmbeddingManager(llm_service, vector_store)
 
 # Create agent orchestrator
+logger.info("Creating agent orchestrator")
 orchestrator = AgentOrchestrator(llm_service)
 
 # Create and register agents
+logger.info("Initializing and registering AI agents")
 analyzer = CodeAnalysisAgent(llm_service, embedding_manager)
 architect = ArchitectAgent(llm_service)
 developer = DeveloperAgent(llm_service)
@@ -47,6 +67,7 @@ developer = DeveloperAgent(llm_service)
 orchestrator.register_agent('analyzer', analyzer)
 orchestrator.register_agent('architect', architect)
 orchestrator.register_agent('developer', developer)
+logger.info("Application initialization complete")
 
 # Import API routes
 from app.api import routes
