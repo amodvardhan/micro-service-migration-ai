@@ -15,8 +15,6 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 class CodeParser:
-    """Parses code files from a repository"""
-
     async def clone_repository(self, repo_url: str) -> str:
         try:
             temp_dir = tempfile.mkdtemp()
@@ -45,8 +43,7 @@ class CodeParser:
 
     def _find_code_files(self, directory_path: str) -> List[str]:
         extensions = [
-            '.cs', '.csproj', '.sln',
-            '.py', '.js', '.ts', '.java', '.go',
+            '.cs', '.csproj', '.sln', '.py', '.js', '.ts', '.java', '.go',
             '.xml', '.json', '.yaml', '.yml'
         ]
         code_files = []
@@ -55,7 +52,6 @@ class CodeParser:
             code_files.extend(glob.glob(pattern, recursive=True))
         return code_files
 
-# Define a Pydantic schema for the expected LLM output
 class PotentialService(BaseModel):
     name: str
     entities: List[str]
@@ -67,8 +63,6 @@ class LLMAnalysisOutput(BaseModel):
     potential_services: List[PotentialService]
 
 class CodeAnalysisAgent:
-    """Agent for analyzing code repositories with enhanced embedding capabilities"""
-
     def __init__(self, llm_service: LLMService, embedding_manager: EmbeddingManager):
         self.llm_service = llm_service
         self.embedding_manager = embedding_manager
@@ -79,7 +73,6 @@ class CodeAnalysisAgent:
         try:
             logger.info(f"Cloning repository: {repo_url}")
             repo_path = await self.code_parser.clone_repository(repo_url)
-
             logger.info(f"Parsing code files from repository")
             parsed_files = await self.code_parser.parse_directory(repo_path)
             logger.info(f"Found {len(parsed_files)} files in repository")
@@ -90,13 +83,13 @@ class CodeAnalysisAgent:
 
             logger.info("Performing static code analysis")
             static_analysis = await self.code_analyzer.analyze_codebase(parsed_files)
-            logger.info(f"Identified {len(static_analysis['entities'])} entities and {len(static_analysis['potential_services'])} potential services")
+            logger.info(f"Identified {len(static_analysis.get('entities', []))} entities and {len(static_analysis.get('potential_services', []))} potential services")
 
             sample_files = self._select_representative_files(parsed_files)
-
             logger.info("Analyzing code structure and dependencies with LLM")
             llm_analysis = await self._analyze_with_llm(sample_files, static_analysis)
 
+            # --- Merge static and LLM results robustly ---
             analysis_results = self._combine_analysis_results(static_analysis, llm_analysis)
 
             if embedding_results["processed_files"] > 0:
@@ -116,14 +109,11 @@ class CodeAnalysisAgent:
             raise
 
     async def _generate_semantic_insights(self, parsed_files: Dict[str, Any], embedding_results: Dict[str, Any]) -> Dict[str, Any]:
-        return {
-            "similar_file_groups": [],
-            "potential_boundaries": [],
-            "duplication_candidates": []
-        }
+        return {"similar_file_groups": [], "potential_boundaries": [], "duplication_candidates": []}
 
     def _combine_analysis_results(self, static_analysis: Dict[str, Any], llm_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        combined = {**static_analysis}
+        # Always merge, never drop static results
+        combined = dict(static_analysis)
         llm_services = llm_analysis.get("potential_services", [])
         if llm_services:
             static_service_map = {s["name"]: s for s in static_analysis.get("potential_services", [])}
@@ -143,14 +133,18 @@ class CodeAnalysisAgent:
                 if static_service["name"] not in [s["name"] for s in merged_services]:
                     merged_services.append(static_service)
             combined["potential_services"] = merged_services
-        combined["architecture_type"] = llm_analysis.get("architecture_type", "Unknown")
+        else:
+            combined["potential_services"] = static_analysis.get("potential_services", [])
+        combined["architecture_type"] = llm_analysis.get("architecture_type") or static_analysis.get("architecture_type", "Unknown")
         combined["architecture_insights"] = llm_analysis.get("architecture_insights", {})
+        # Always include entities, api_endpoints, etc.
+        combined["entities"] = static_analysis.get("entities", [])
+        combined["api_endpoints"] = static_analysis.get("api_endpoints", [])
+        combined["dependencies"] = static_analysis.get("dependencies", [])
         return combined
 
     async def _analyze_with_llm(self, sample_files: Dict[str, Any], static_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        """Analyze code files with the LLM, incorporating static analysis results and parsing the output dynamically."""
         prompt = self._prepare_analysis_prompt(sample_files, static_analysis)
-        # Instruct the LLM to return valid JSON matching the schema
         prompt += (
             "\n\n"
             "Return your answer as a valid JSON object matching this schema:\n"
@@ -162,11 +156,8 @@ class CodeAnalysisAgent:
             "  ]\n"
             "}\n"
         )
-
         analysis_response = await self.llm_service.generate_completion(prompt)
         content = analysis_response.get("content", "")
-
-        # Try to extract JSON from the LLM output
         try:
             json_start = content.find("{")
             json_str = content[json_start:]

@@ -61,42 +61,71 @@ async def analyze_repository(
 async def get_analysis_results(repo_id: str):
     if repo_id not in analysis_results_store:
         raise HTTPException(status_code=404, detail="Analysis not found")
+
     analysis_data = analysis_results_store[repo_id]
+
     if analysis_data["status"] == "processing":
         return {
             "repo_id": repo_id,
             "status": "processing",
             "message": "Analysis is still in progress"
         }
+
     if analysis_data["status"] == "failed":
         return {
             "repo_id": repo_id,
             "status": "failed",
             "error": analysis_data.get("error", "Unknown error")
         }
+
     results = analysis_data.get("results", {})
-    analysis_results = results.get("analysis_results", {})
+
+    # Find the analyzer and architect results by scanning for their keys
+    analyzer_result = None
+    architect_result = None
+    for k, v in results.items():
+        if k.startswith("analyzer_analyze_repository"):
+            analyzer_result = v.get("analysis_results", v)
+        if k.startswith("architect_identify_service_boundaries"):
+            architect_result = v
+
+    # Fallbacks
+    if not analyzer_result:
+        analyzer_result = results.get("analysis_results", {})
+    if not architect_result:
+        architect_result = {}
+
+    def merged_field(field, default=[]):
+        # For potential_services/service_boundaries, check both field names
+        if field == "potential_services":
+            return (
+                architect_result.get("service_boundaries")
+                or analyzer_result.get("potential_services", default)
+            )
+        return (
+            architect_result.get(field)
+            if architect_result.get(field)
+            else analyzer_result.get(field, default)
+        )
+
     return {
         "repo_id": repo_id,
         "repo_url": analysis_data["repo_url"],
         "status": "completed",
         "timestamp": analysis_data["timestamp"],
         "analysis": {
-            "architecture_type": analysis_results.get("architecture_type", "Unknown"),
-            "potential_services": analysis_results.get("potential_services", []),
-            "entities": [
-                {
-                    "name": entity.get("name"),
-                    "type": entity.get("type"),
-                    "namespace": entity.get("namespace")
-                }
-                for entity in analysis_results.get("entities", [])[:20]
-            ],
-            "api_endpoints": analysis_results.get("api_endpoints", []),
-            "dependencies": analysis_results.get("dependencies", []),
-            "semantic_insights": analysis_results.get("semantic_insights", {})
+            "architecture_type": architect_result.get("architecture_type")
+                or analyzer_result.get("architecture_type", "Unknown"),
+            "potential_services": merged_field("potential_services", []),
+            "entities": merged_field("entities", []),
+            "api_endpoints": merged_field("api_endpoints", []),
+            "dependencies": merged_field("dependencies", []),
+            "semantic_insights": merged_field("semantic_insights", {}),
         }
     }
+
+
+
 
 @router.get("/api/analyses")
 async def list_analyses():
