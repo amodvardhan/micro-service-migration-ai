@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import RepositoryAnalysisPage from "./pages/RepositoryAnalysisPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import AnalysisResultsPage from "./pages/AnalysisResultsPage";
+import ServiceBoundariesPage from "./pages/ServiceBoundariesPage";
 
 const App: React.FC = () => (
     <Routes>
@@ -12,6 +13,7 @@ const App: React.FC = () => (
             <Route index element={<HomePage />} />
             <Route path="analyze" element={<RepositoryAnalysisPage />} />
             <Route path="analysis/:repoId" element={<AnalysisResultsPage />} />
+            <Route path="services/:repoId" element={<ServiceBoundariesPage />} />
             <Route path="*" element={<NotFoundPage />} />
         </Route>
     </Routes>
