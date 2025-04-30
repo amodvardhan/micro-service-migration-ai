@@ -112,36 +112,26 @@ class CodeAnalysisAgent:
         return {"similar_file_groups": [], "potential_boundaries": [], "duplication_candidates": []}
 
     def _combine_analysis_results(self, static_analysis: Dict[str, Any], llm_analysis: Dict[str, Any]) -> Dict[str, Any]:
-        # Always merge, never drop static results
+        # Only accept LLM services that match actual namespaces/entities
+        valid_namespaces = set(static_analysis.get("namespaces", {}).keys())
+        valid_entities = set(e["name"] for e in static_analysis.get("entities", []))
+        filtered_services = []
+        for svc in llm_analysis.get("potential_services", []):
+            svc_entities = set(svc.get("entities", []))
+            if svc_entities & valid_entities:
+                filtered_services.append(svc)
+        # If no valid services, fallback to static analysis
+        if not filtered_services:
+            filtered_services = static_analysis.get("potential_services", [])
         combined = dict(static_analysis)
-        llm_services = llm_analysis.get("potential_services", [])
-        if llm_services:
-            static_service_map = {s["name"]: s for s in static_analysis.get("potential_services", [])}
-            merged_services = []
-            for llm_service in llm_services:
-                service_name = llm_service["name"]
-                if service_name in static_service_map:
-                    merged_service = {**static_service_map[service_name], **llm_service}
-                    merged_service["entities"] = list(set(
-                        static_service_map[service_name].get("entities", []) +
-                        llm_service.get("entities", [])
-                    ))
-                    merged_services.append(merged_service)
-                else:
-                    merged_services.append(llm_service)
-            for static_service in static_analysis.get("potential_services", []):
-                if static_service["name"] not in [s["name"] for s in merged_services]:
-                    merged_services.append(static_service)
-            combined["potential_services"] = merged_services
-        else:
-            combined["potential_services"] = static_analysis.get("potential_services", [])
+        combined["potential_services"] = filtered_services
         combined["architecture_type"] = llm_analysis.get("architecture_type") or static_analysis.get("architecture_type", "Unknown")
         combined["architecture_insights"] = llm_analysis.get("architecture_insights", {})
-        # Always include entities, api_endpoints, etc.
         combined["entities"] = static_analysis.get("entities", [])
         combined["api_endpoints"] = static_analysis.get("api_endpoints", [])
         combined["dependencies"] = static_analysis.get("dependencies", [])
         return combined
+
 
     async def _analyze_with_llm(self, sample_files: Dict[str, Any], static_analysis: Dict[str, Any]) -> Dict[str, Any]:
         prompt = self._prepare_analysis_prompt(sample_files, static_analysis)
@@ -173,19 +163,21 @@ class CodeAnalysisAgent:
             }
 
     def _prepare_analysis_prompt(self, sample_files: Dict[str, Any], static_analysis: Dict[str, Any]) -> str:
-        prompt = "Analyze the following code files and static analysis results to understand the architecture and identify potential microservice boundaries:\n\n"
-        prompt += "## Static Analysis Summary\n"
-        prompt += f"- Found {len(static_analysis.get('entities', []))} entities\n"
-        prompt += f"- Found {len(static_analysis.get('api_endpoints', []))} API endpoints\n"
-        prompt += f"- Found {len(static_analysis.get('namespaces', {}))} namespaces\n"
-        prompt += f"- Identified {len(static_analysis.get('potential_services', []))} potential services\n\n"
-        prompt += "## Potential Services Identified by Static Analysis\n"
-        for service in static_analysis.get('potential_services', [])[:5]:
-            prompt += f"- {service.get('name')}\n"
-            prompt += f"  - Namespace: {service.get('namespace')}\n"
-            prompt += f"  - Entities: {', '.join(service.get('entities', []))}\n"
-        prompt += "\n"
-        prompt += "## Sample Code Files\n"
+        prompt = (
+            "You are an expert in software architecture and code analysis.\n"
+            "Analyze the following codebase and static analysis results to identify potential microservice boundaries.\n"
+            "You MUST only propose services that are grounded in the actual namespaces and entities found below.\n\n"
+            "## Namespaces and Entities Found:\n"
+        )
+        # List namespaces and their entities
+        for ns, files in static_analysis.get("namespaces", {}).items():
+            ns_entities = [e["name"] for e in static_analysis.get("entities", []) if e.get("namespace") == ns]
+            if ns_entities:
+                prompt += f"- Namespace: {ns}\n  Entities: {', '.join(ns_entities)}\n"
+        prompt += "\n## API Endpoints Found:\n"
+        for ep in static_analysis.get("api_endpoints", []):
+            prompt += f"- {ep.get('method', 'GET')} {ep.get('route', '')}\n"
+        prompt += "\n## Sample Code Files:\n"
         for file_path, file_info in list(sample_files.items())[:3]:
             prompt += f"File: {file_path}\n"
             prompt += "```\n"
@@ -194,7 +186,15 @@ class CodeAnalysisAgent:
                 content = content[:1000] + "...[truncated]"
             prompt += content + "\n```\n\n"
         prompt += (
-            "Please provide the following information in valid JSON as described above."
+            "Based ONLY on the above namespaces and entities, return a JSON object with this schema:\n"
+            "{\n"
+            "  \"architecture_type\": string,\n"
+            "  \"architecture_insights\": object,\n"
+            "  \"potential_services\": [\n"
+            "    {\"name\": string, \"entities\": [string], \"responsibilities\": [string]}\n"
+            "  ]\n"
+            "}\n"
+            "Do NOT invent services unrelated to the namespaces/entities above. If you cannot identify any, return an empty list."
         )
         return prompt
 
