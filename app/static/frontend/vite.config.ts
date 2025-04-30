@@ -8,6 +8,7 @@ export default defineConfig({
     emptyOutDir: true,
     sourcemap: true
   },
+  base: "/", // important for correct asset paths!
   server: {
     proxy: {
       '/api': {

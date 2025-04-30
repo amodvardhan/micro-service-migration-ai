@@ -139,3 +139,2152 @@
 2025-04-27 15:36:32,742 - app.main - INFO - Creating agent orchestrator
 2025-04-27 15:36:32,742 - app.main - INFO - Initializing and registering AI agents
 2025-04-27 15:36:32,742 - app.main - INFO - Application initialization complete
+2025-04-28 21:13:22,805 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:13:22,806 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:13:22,806 - app.main - INFO - Initializing application services
+2025-04-28 21:13:22,806 - app.main - INFO - Initializing vector database
+2025-04-28 21:13:23,242 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:13:23,242 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:13:23,242 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:13:23,243 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:13:23,243 - app.main - INFO - Application initialization complete
+2025-04-28 21:13:24,994 - app.main - INFO - Serving SPA for path: apple-touch-icon-precomposed.png
+2025-04-28 21:13:25,128 - app.main - INFO - Serving SPA for path: apple-touch-icon.png
+2025-04-28 21:14:23,060 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:14:23,061 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:14:23,062 - app.main - INFO - Initializing application services
+2025-04-28 21:14:23,063 - app.main - INFO - Initializing vector database
+2025-04-28 21:14:23,366 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:14:23,366 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:14:23,366 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:14:23,367 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:14:23,367 - app.main - INFO - Application initialization complete
+2025-04-28 21:14:47,824 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:14:47,825 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:14:47,825 - app.main - INFO - Initializing application services
+2025-04-28 21:14:47,825 - app.main - INFO - Initializing vector database
+2025-04-28 21:14:48,128 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:14:48,128 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:14:48,128 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:14:48,128 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:14:48,128 - app.main - INFO - Application initialization complete
+2025-04-28 21:14:48,130 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:14:48,144 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:15:28,133 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:15:28,133 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:15:28,134 - app.main - INFO - Initializing application services
+2025-04-28 21:15:28,134 - app.main - INFO - Initializing vector database
+2025-04-28 21:15:28,464 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:15:28,464 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:15:28,464 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:15:28,464 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:15:28,464 - app.main - INFO - Application initialization complete
+2025-04-28 21:15:38,225 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:15:38,226 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:15:38,226 - app.main - INFO - Initializing application services
+2025-04-28 21:15:38,226 - app.main - INFO - Initializing vector database
+2025-04-28 21:15:38,459 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:15:38,459 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:15:38,459 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:15:38,459 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:15:38,459 - app.main - INFO - Application initialization complete
+2025-04-28 21:15:40,980 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:15:40,995 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:15:54,860 - app.main - INFO - Checking for static files in /static/dist
+2025-04-28 21:15:54,860 - app.main - WARNING - Directory /static/dist does not exist. Static files will not be served.
+2025-04-28 21:15:54,861 - app.main - INFO - Initializing application services
+2025-04-28 21:15:54,861 - app.main - INFO - Initializing vector database
+2025-04-28 21:15:55,094 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:15:55,095 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:15:55,095 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:15:55,095 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:15:55,095 - app.main - INFO - Application initialization complete
+2025-04-28 21:15:55,097 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:15:55,097 - app.main - ERROR - File /static/dist/index.html does not exist
+2025-04-28 21:16:01,060 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:16:01,061 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:16:01,062 - app.main - INFO - Initializing application services
+2025-04-28 21:16:01,062 - app.main - INFO - Initializing vector database
+2025-04-28 21:16:01,308 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:16:01,308 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:16:01,308 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:16:01,308 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:16:01,308 - app.main - INFO - Application initialization complete
+2025-04-28 21:16:58,232 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:16:58,232 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:16:58,233 - app.main - INFO - Initializing application services
+2025-04-28 21:16:58,233 - app.main - INFO - Initializing vector database
+2025-04-28 21:16:58,495 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:16:58,495 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:16:58,495 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:16:58,495 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:16:58,495 - app.main - INFO - Application initialization complete
+2025-04-28 21:16:59,765 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:16:59,779 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:18:41,916 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:18:41,917 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:18:41,917 - app.main - INFO - Initializing application services
+2025-04-28 21:18:41,917 - app.main - INFO - Initializing vector database
+2025-04-28 21:18:42,211 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:18:42,211 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:18:42,211 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:18:42,211 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:18:42,211 - app.main - INFO - Application initialization complete
+2025-04-28 21:18:43,411 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:18:43,432 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:19:17,203 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:19:17,203 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:19:17,204 - app.main - INFO - Initializing application services
+2025-04-28 21:19:17,204 - app.main - INFO - Initializing vector database
+2025-04-28 21:19:17,502 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:19:17,503 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:19:17,503 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:19:17,503 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:19:17,503 - app.main - INFO - Application initialization complete
+2025-04-28 21:19:25,462 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:19:25,463 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:19:25,463 - app.main - INFO - Initializing application services
+2025-04-28 21:19:25,463 - app.main - INFO - Initializing vector database
+2025-04-28 21:19:25,706 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:19:25,706 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:19:25,707 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:19:25,707 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:19:25,707 - app.main - INFO - Application initialization complete
+2025-04-28 21:19:41,627 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:19:41,628 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:19:41,628 - app.main - INFO - Initializing application services
+2025-04-28 21:19:41,629 - app.main - INFO - Initializing vector database
+2025-04-28 21:19:41,866 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:19:41,866 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:19:41,866 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:19:41,866 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:19:41,866 - app.main - INFO - Application initialization complete
+2025-04-28 21:19:53,278 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:19:53,279 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:19:53,279 - app.main - INFO - Initializing application services
+2025-04-28 21:19:53,279 - app.main - INFO - Initializing vector database
+2025-04-28 21:19:53,516 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:19:53,516 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:19:53,516 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:19:53,516 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:19:53,517 - app.main - INFO - Application initialization complete
+2025-04-28 21:19:56,546 - app.main - INFO - Serving SPA for path: static
+2025-04-28 21:19:56,581 - app.main - INFO - Serving SPA for path: favicon.svg
+2025-04-28 21:20:55,011 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:20:55,012 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:20:55,013 - app.main - INFO - Initializing application services
+2025-04-28 21:20:55,013 - app.main - INFO - Initializing vector database
+2025-04-28 21:20:55,309 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:20:55,309 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:20:55,309 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:20:55,309 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:20:55,309 - app.main - INFO - Application initialization complete
+2025-04-28 21:21:07,632 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:21:07,632 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:21:07,634 - app.main - INFO - Initializing application services
+2025-04-28 21:21:07,634 - app.main - INFO - Initializing vector database
+2025-04-28 21:21:07,874 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:21:07,874 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:21:07,874 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:21:07,874 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:21:07,874 - app.main - INFO - Application initialization complete
+2025-04-28 21:21:07,887 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:21:39,194 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:21:39,194 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:21:39,195 - app.main - INFO - Initializing application services
+2025-04-28 21:21:39,195 - app.main - INFO - Initializing vector database
+2025-04-28 21:21:39,427 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:21:39,427 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:21:39,427 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:21:39,427 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:21:39,427 - app.main - INFO - Application initialization complete
+2025-04-28 21:22:37,983 - app.main - INFO - Serving SPA for path: 
+2025-04-28 21:22:37,999 - app.main - INFO - Serving SPA for path: assets/index-54ba8c99.js
+2025-04-28 21:23:04,523 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:24:33,038 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:24:33,039 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:24:33,039 - app.main - INFO - Initializing application services
+2025-04-28 21:24:33,039 - app.main - INFO - Initializing vector database
+2025-04-28 21:24:33,334 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:24:33,334 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:24:33,334 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:24:33,334 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:24:33,334 - app.main - INFO - Application initialization complete
+2025-04-28 21:51:22,777 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 21:51:22,778 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 21:51:22,778 - app.main - INFO - Initializing application services
+2025-04-28 21:51:22,779 - app.main - INFO - Initializing vector database
+2025-04-28 21:51:23,217 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 21:51:23,217 - app.main - INFO - Initializing embedding manager
+2025-04-28 21:51:23,217 - app.main - INFO - Creating agent orchestrator
+2025-04-28 21:51:23,217 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 21:51:23,218 - app.main - INFO - Application initialization complete
+2025-04-28 22:06:03,257 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 22:06:03,258 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 22:06:03,259 - app.main - INFO - Initializing application services
+2025-04-28 22:06:03,259 - app.main - INFO - Initializing vector database
+2025-04-28 22:06:03,600 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 22:06:03,600 - app.main - INFO - Initializing embedding manager
+2025-04-28 22:06:03,600 - app.main - INFO - Creating agent orchestrator
+2025-04-28 22:06:03,600 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 22:06:03,600 - app.main - INFO - Application initialization complete
+2025-04-28 22:06:11,859 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 22:06:11,860 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 22:06:11,860 - app.main - INFO - Initializing application services
+2025-04-28 22:06:11,860 - app.main - INFO - Initializing vector database
+2025-04-28 22:06:12,082 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 22:06:12,082 - app.main - INFO - Initializing embedding manager
+2025-04-28 22:06:12,082 - app.main - INFO - Creating agent orchestrator
+2025-04-28 22:06:12,082 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 22:06:12,082 - app.main - INFO - Application initialization complete
+2025-04-28 22:06:26,079 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 22:06:26,079 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 22:06:26,080 - app.main - INFO - Initializing application services
+2025-04-28 22:06:26,080 - app.main - INFO - Initializing vector database
+2025-04-28 22:06:26,319 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 22:06:26,319 - app.main - INFO - Initializing embedding manager
+2025-04-28 22:06:26,319 - app.main - INFO - Creating agent orchestrator
+2025-04-28 22:06:26,319 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 22:06:26,319 - app.main - INFO - Application initialization complete
+2025-04-28 22:06:30,418 - app.main - INFO - Checking for static files in static/dist
+2025-04-28 22:06:30,418 - app.main - INFO - Static files mounted from static/dist
+2025-04-28 22:06:30,419 - app.main - INFO - Initializing application services
+2025-04-28 22:06:30,419 - app.main - INFO - Initializing vector database
+2025-04-28 22:06:30,657 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-28 22:06:30,657 - app.main - INFO - Initializing embedding manager
+2025-04-28 22:06:30,657 - app.main - INFO - Creating agent orchestrator
+2025-04-28 22:06:30,657 - app.main - INFO - Initializing and registering AI agents
+2025-04-28 22:06:30,658 - app.main - INFO - Application initialization complete
+2025-04-30 11:07:13,711 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:07:13,712 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:07:13,713 - app.main - INFO - Initializing application services
+2025-04-30 11:07:13,713 - app.main - INFO - Initializing vector database
+2025-04-30 11:07:14,120 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 11:07:14,120 - app.main - INFO - Initializing embedding manager
+2025-04-30 11:07:14,120 - app.main - INFO - Creating agent orchestrator
+2025-04-30 11:07:14,120 - app.main - INFO - Initializing and registering AI agents
+2025-04-30 11:07:14,121 - app.main - INFO - Application initialization complete
+2025-04-30 11:07:27,647 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:07:27,647 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:07:27,648 - app.main - INFO - Initializing application services
+2025-04-30 11:07:27,648 - app.main - INFO - Initializing vector database
+2025-04-30 11:07:27,949 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 11:07:27,950 - app.main - INFO - Initializing embedding manager
+2025-04-30 11:07:27,950 - app.main - INFO - Creating agent orchestrator
+2025-04-30 11:07:27,950 - app.main - INFO - Initializing and registering AI agents
+2025-04-30 11:07:27,950 - app.main - INFO - Application initialization complete
+2025-04-30 11:08:05,029 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:08:05,030 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:08:05,030 - app.main - INFO - Initializing application services
+2025-04-30 11:08:05,030 - app.main - INFO - Initializing vector database
+2025-04-30 11:08:05,258 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 11:08:05,258 - app.main - INFO - Initializing embedding manager
+2025-04-30 11:08:05,258 - app.main - INFO - Creating agent orchestrator
+2025-04-30 11:08:05,259 - app.main - INFO - Initializing and registering AI agents
+2025-04-30 11:08:05,259 - app.main - INFO - Application initialization complete
+2025-04-30 11:32:38,981 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:32:38,982 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:33:00,575 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:33:00,575 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:34:17,962 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:34:17,962 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:34:59,494 - app.main - INFO - Initializing orchestrator (singleton)
+2025-04-30 11:34:59,912 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 11:34:59,913 - app.api.routes - INFO - Starting analysis for repository: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 11:34:59,914 - app.agents.analyzer - INFO - Cloning repository: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 11:35:01,859 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 11:35:01,883 - app.agents.analyzer - INFO - Found 40 files in repository
+2025-04-30 11:35:01,883 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 11:35:01,883 - app.knowledge.embedding_manager - INFO - Starting to process 40 files for embeddings
+2025-04-30 11:35:01,883 - app.knowledge.embedding_manager - INFO - Processing batch 1/4
+2025-04-30 11:35:01,883 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:01,883 - app.knowledge.embedding_manager - INFO - Processing batch 2/4
+2025-04-30 11:35:01,883 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - INFO - Processing batch 3/4
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - INFO - Processing batch 4/4
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - WARNING - File too large, skipping: IAEA.NE.GEOPORTAL.Web/geoportal-client/package-lock.json
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:01,884 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 4 errors
+2025-04-30 11:35:01,884 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 11:35:01,884 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 11:35:01,908 - app.agents.analyzer - INFO - Identified 35 entities and 5 potential services
+2025-04-30 11:35:01,908 - app.agents.analyzer - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:35:01,908 - app.api.routes - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:35:19,912 - app.api.routes - INFO - Starting analysis for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:35:19,913 - app.agents.analyzer - INFO - Cloning repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:35:26,447 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 11:35:26,588 - app.agents.analyzer - INFO - Found 291 files in repository
+2025-04-30 11:35:26,588 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 11:35:26,588 - app.knowledge.embedding_manager - INFO - Starting to process 291 files for embeddings
+2025-04-30 11:35:26,588 - app.knowledge.embedding_manager - INFO - Processing batch 1/30
+2025-04-30 11:35:26,589 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,589 - app.knowledge.embedding_manager - INFO - Processing batch 2/30
+2025-04-30 11:35:26,589 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,589 - app.knowledge.embedding_manager - INFO - Processing batch 3/30
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - INFO - Processing batch 4/30
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - INFO - Processing batch 5/30
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - INFO - Processing batch 6/30
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,590 - app.knowledge.embedding_manager - INFO - Processing batch 7/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 8/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 9/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 10/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 11/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 12/30
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,591 - app.knowledge.embedding_manager - INFO - Processing batch 13/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 14/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 15/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 16/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 17/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 18/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 19/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - INFO - Processing batch 20/30
+2025-04-30 11:35:26,592 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - INFO - Processing batch 21/30
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - INFO - Processing batch 22/30
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - INFO - Processing batch 23/30
+2025-04-30 11:35:26,593 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,594 - app.knowledge.embedding_manager - INFO - Processing batch 24/30
+2025-04-30 11:35:26,594 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,594 - app.knowledge.embedding_manager - INFO - Processing batch 25/30
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - INFO - Processing batch 26/30
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - INFO - Processing batch 27/30
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - WARNING - Empty or invalid file, skipping: src/Web/wwwroot/js/site.min.js
+2025-04-30 11:35:26,595 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,596 - app.knowledge.embedding_manager - INFO - Processing batch 28/30
+2025-04-30 11:35:26,596 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,596 - app.knowledge.embedding_manager - INFO - Processing batch 29/30
+2025-04-30 11:35:26,596 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,597 - app.knowledge.embedding_manager - INFO - Processing batch 30/30
+2025-04-30 11:35:26,597 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:35:26,597 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 30 errors
+2025-04-30 11:35:26,597 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 11:35:26,597 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 11:35:26,780 - app.agents.analyzer - INFO - Identified 254 entities and 56 potential services
+2025-04-30 11:35:26,780 - app.agents.analyzer - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:35:26,780 - app.api.routes - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:42:24,699 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:42:24,700 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:43:01,762 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:43:01,763 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:55:53,916 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 11:55:53,917 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 11:56:04,249 - app.main - INFO - Initializing orchestrator (singleton)
+2025-04-30 11:56:04,650 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 11:56:04,651 - app.api.routes - INFO - Starting analysis for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:56:04,651 - app.agents.analyzer - INFO - Cloning repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:56:10,735 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 11:56:10,874 - app.agents.analyzer - INFO - Found 291 files in repository
+2025-04-30 11:56:10,874 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 11:56:10,874 - app.knowledge.embedding_manager - INFO - Starting to process 291 files for embeddings
+2025-04-30 11:56:10,874 - app.knowledge.embedding_manager - INFO - Processing batch 1/30
+2025-04-30 11:56:10,874 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - INFO - Processing batch 2/30
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - INFO - Processing batch 3/30
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - INFO - Processing batch 4/30
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - INFO - Processing batch 5/30
+2025-04-30 11:56:10,875 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 6/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 7/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 8/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 9/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 10/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 11/30
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,876 - app.knowledge.embedding_manager - INFO - Processing batch 12/30
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - INFO - Processing batch 13/30
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - INFO - Processing batch 14/30
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - INFO - Processing batch 15/30
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - INFO - Processing batch 16/30
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,877 - app.knowledge.embedding_manager - INFO - Processing batch 17/30
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - INFO - Processing batch 18/30
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - INFO - Processing batch 19/30
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - INFO - Processing batch 20/30
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - INFO - Processing batch 21/30
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,878 - app.knowledge.embedding_manager - INFO - Processing batch 22/30
+2025-04-30 11:56:10,879 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,879 - app.knowledge.embedding_manager - INFO - Processing batch 23/30
+2025-04-30 11:56:10,880 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,880 - app.knowledge.embedding_manager - INFO - Processing batch 24/30
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - INFO - Processing batch 25/30
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - INFO - Processing batch 26/30
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - INFO - Processing batch 27/30
+2025-04-30 11:56:10,881 - app.knowledge.embedding_manager - WARNING - Empty or invalid file, skipping: src/Web/wwwroot/js/site.min.js
+2025-04-30 11:56:10,882 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,882 - app.knowledge.embedding_manager - INFO - Processing batch 28/30
+2025-04-30 11:56:10,885 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,888 - app.knowledge.embedding_manager - INFO - Processing batch 29/30
+2025-04-30 11:56:10,891 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,891 - app.knowledge.embedding_manager - INFO - Processing batch 30/30
+2025-04-30 11:56:10,893 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:56:10,894 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 30 errors
+2025-04-30 11:56:10,895 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 11:56:10,895 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 11:56:11,106 - app.agents.analyzer - INFO - Identified 254 entities and 56 potential services
+2025-04-30 11:56:11,106 - app.agents.analyzer - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:56:11,106 - app.api.routes - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:58:12,647 - app.api.routes - INFO - Starting analysis for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:58:12,649 - app.agents.analyzer - INFO - Cloning repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:58:19,766 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 11:58:19,906 - app.agents.analyzer - INFO - Found 291 files in repository
+2025-04-30 11:58:19,906 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 11:58:19,906 - app.knowledge.embedding_manager - INFO - Starting to process 291 files for embeddings
+2025-04-30 11:58:19,906 - app.knowledge.embedding_manager - INFO - Processing batch 1/30
+2025-04-30 11:58:19,906 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 2/30
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 3/30
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 4/30
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 5/30
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 6/30
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,907 - app.knowledge.embedding_manager - INFO - Processing batch 7/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 8/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 9/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 10/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 11/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 12/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - INFO - Processing batch 13/30
+2025-04-30 11:58:19,908 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 14/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 15/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 16/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 17/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 18/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 19/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - INFO - Processing batch 20/30
+2025-04-30 11:58:19,909 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 21/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 22/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 23/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 24/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 25/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 26/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - INFO - Processing batch 27/30
+2025-04-30 11:58:19,910 - app.knowledge.embedding_manager - WARNING - Empty or invalid file, skipping: src/Web/wwwroot/js/site.min.js
+2025-04-30 11:58:19,911 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,911 - app.knowledge.embedding_manager - INFO - Processing batch 28/30
+2025-04-30 11:58:19,911 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,912 - app.knowledge.embedding_manager - INFO - Processing batch 29/30
+2025-04-30 11:58:19,912 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,913 - app.knowledge.embedding_manager - INFO - Processing batch 30/30
+2025-04-30 11:58:19,913 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:19,913 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 30 errors
+2025-04-30 11:58:19,913 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 11:58:19,913 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 11:58:20,095 - app.agents.analyzer - INFO - Identified 254 entities and 56 potential services
+2025-04-30 11:58:20,096 - app.agents.analyzer - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:58:20,096 - app.api.routes - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:58:49,853 - app.api.routes - INFO - Starting analysis for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:58:49,855 - app.agents.analyzer - INFO - Cloning repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 11:58:56,072 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 11:58:56,212 - app.agents.analyzer - INFO - Found 291 files in repository
+2025-04-30 11:58:56,212 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 11:58:56,212 - app.knowledge.embedding_manager - INFO - Starting to process 291 files for embeddings
+2025-04-30 11:58:56,212 - app.knowledge.embedding_manager - INFO - Processing batch 1/30
+2025-04-30 11:58:56,212 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - INFO - Processing batch 2/30
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - INFO - Processing batch 3/30
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - INFO - Processing batch 4/30
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - INFO - Processing batch 5/30
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,213 - app.knowledge.embedding_manager - INFO - Processing batch 6/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 7/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 8/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 9/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 10/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 11/30
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,214 - app.knowledge.embedding_manager - INFO - Processing batch 12/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 13/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 14/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 15/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 16/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 17/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - INFO - Processing batch 18/30
+2025-04-30 11:58:56,215 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 19/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 20/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 21/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 22/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 23/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - INFO - Processing batch 24/30
+2025-04-30 11:58:56,216 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,217 - app.knowledge.embedding_manager - INFO - Processing batch 25/30
+2025-04-30 11:58:56,217 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,217 - app.knowledge.embedding_manager - INFO - Processing batch 26/30
+2025-04-30 11:58:56,217 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,218 - app.knowledge.embedding_manager - INFO - Processing batch 27/30
+2025-04-30 11:58:56,218 - app.knowledge.embedding_manager - WARNING - Empty or invalid file, skipping: src/Web/wwwroot/js/site.min.js
+2025-04-30 11:58:56,218 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - INFO - Processing batch 28/30
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - INFO - Processing batch 29/30
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - INFO - Processing batch 30/30
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 11:58:56,219 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 30 errors
+2025-04-30 11:58:56,220 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 11:58:56,220 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 11:58:56,403 - app.agents.analyzer - INFO - Identified 254 entities and 56 potential services
+2025-04-30 11:58:56,403 - app.agents.analyzer - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 11:58:56,403 - app.api.routes - ERROR - Error analyzing repository: 'CodeAnalysisAgent' object has no attribute '_select_representative_files'
+2025-04-30 12:05:46,491 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 12:05:46,491 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 12:15:29,440 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 12:15:29,441 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 12:18:03,556 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 12:18:03,556 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 12:26:40,998 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 12:26:40,999 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 12:27:57,908 - app.main - INFO - Checking for static files in static/dist
+2025-04-30 12:27:57,909 - app.main - INFO - Static files mounted from static/dist
+2025-04-30 12:28:50,030 - app.main - INFO - Initializing orchestrator (singleton)
+2025-04-30 12:28:50,490 - app.knowledge.vector_store - INFO - Connected to collection: code_embeddings
+2025-04-30 12:28:50,490 - app.agents.orchestrator - INFO - Registering agent: analyzer
+2025-04-30 12:28:50,490 - app.agents.orchestrator - INFO - Registering agent: architect
+2025-04-30 12:28:50,490 - app.agents.orchestrator - INFO - Registering agent: developer
+2025-04-30 12:28:50,491 - app.api.routes - INFO - Starting analysis for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 12:28:50,492 - app.agents.orchestrator - INFO - Starting codebase processing for repo: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 12:28:50,492 - app.agents.orchestrator - INFO - Executing task analyzer_analyze_repository_4427328128 (analyzer.analyze_repository)
+2025-04-30 12:28:50,492 - app.agents.analyzer - INFO - Cloning repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 12:28:56,633 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 12:28:56,761 - app.agents.analyzer - INFO - Found 291 files in repository
+2025-04-30 12:28:56,761 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 12:28:56,761 - app.knowledge.embedding_manager - INFO - Starting to process 291 files for embeddings
+2025-04-30 12:28:56,761 - app.knowledge.embedding_manager - INFO - Processing batch 1/30
+2025-04-30 12:28:56,761 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - INFO - Processing batch 2/30
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - INFO - Processing batch 3/30
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - INFO - Processing batch 4/30
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - INFO - Processing batch 5/30
+2025-04-30 12:28:56,762 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 6/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 7/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 8/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 9/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 10/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 11/30
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,763 - app.knowledge.embedding_manager - INFO - Processing batch 12/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 13/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 14/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 15/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 16/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 17/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - INFO - Processing batch 18/30
+2025-04-30 12:28:56,764 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - INFO - Processing batch 19/30
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - INFO - Processing batch 20/30
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - INFO - Processing batch 21/30
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - INFO - Processing batch 22/30
+2025-04-30 12:28:56,765 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,766 - app.knowledge.embedding_manager - INFO - Processing batch 23/30
+2025-04-30 12:28:56,766 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,770 - app.knowledge.embedding_manager - INFO - Processing batch 24/30
+2025-04-30 12:28:56,770 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - INFO - Processing batch 25/30
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - INFO - Processing batch 26/30
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - INFO - Processing batch 27/30
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - WARNING - Empty or invalid file, skipping: src/Web/wwwroot/js/site.min.js
+2025-04-30 12:28:56,771 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,772 - app.knowledge.embedding_manager - INFO - Processing batch 28/30
+2025-04-30 12:28:56,772 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,772 - app.knowledge.embedding_manager - INFO - Processing batch 29/30
+2025-04-30 12:28:56,772 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,773 - app.knowledge.embedding_manager - INFO - Processing batch 30/30
+2025-04-30 12:28:56,773 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,773 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 30 errors
+2025-04-30 12:28:56,773 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 12:28:56,773 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 12:28:56,948 - app.agents.analyzer - INFO - Identified 254 entities and 56 potential services
+2025-04-30 12:28:56,948 - app.agents.analyzer - INFO - Analyzing code structure and dependencies with LLM
+2025-04-30 12:28:56,949 - app.agents.analyzer - ERROR - Error analyzing repository: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,950 - app.agents.orchestrator - ERROR - Error executing task analyzer_analyze_repository_4427328128: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:28:56,950 - app.agents.orchestrator - INFO - Codebase processing complete for repo: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 12:28:56,950 - app.api.routes - INFO - Analysis completed for repository: https://github.com/dotnet-architecture/eShopOnWeb.git
+2025-04-30 12:32:11,714 - app.api.routes - INFO - Starting analysis for repository: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 12:32:11,715 - app.agents.orchestrator - INFO - Starting codebase processing for repo: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 12:32:11,715 - app.agents.orchestrator - INFO - Executing task analyzer_analyze_repository_4427331872 (analyzer.analyze_repository)
+2025-04-30 12:32:11,715 - app.agents.analyzer - INFO - Cloning repository: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 12:32:13,458 - app.agents.analyzer - INFO - Parsing code files from repository
+2025-04-30 12:32:13,479 - app.agents.analyzer - INFO - Found 40 files in repository
+2025-04-30 12:32:13,479 - app.agents.analyzer - INFO - Generating and storing embeddings for code files
+2025-04-30 12:32:13,479 - app.knowledge.embedding_manager - INFO - Starting to process 40 files for embeddings
+2025-04-30 12:32:13,479 - app.knowledge.embedding_manager - INFO - Processing batch 1/4
+2025-04-30 12:32:13,479 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,479 - app.knowledge.embedding_manager - INFO - Processing batch 2/4
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - INFO - Processing batch 3/4
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - INFO - Processing batch 4/4
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - WARNING - File too large, skipping: IAEA.NE.GEOPORTAL.Web/geoportal-client/package-lock.json
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - ERROR - Error processing batch: 
+
+You tried to access openai.Embedding, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,480 - app.knowledge.embedding_manager - INFO - Completed processing. Processed 0 files, skipped 0, encountered 4 errors
+2025-04-30 12:32:13,480 - app.agents.analyzer - INFO - Processed 0 files for embeddings
+2025-04-30 12:32:13,480 - app.agents.analyzer - INFO - Performing static code analysis
+2025-04-30 12:32:13,501 - app.agents.analyzer - INFO - Identified 35 entities and 5 potential services
+2025-04-30 12:32:13,501 - app.agents.analyzer - INFO - Analyzing code structure and dependencies with LLM
+2025-04-30 12:32:13,501 - app.agents.analyzer - ERROR - Error analyzing repository: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,501 - app.agents.orchestrator - ERROR - Error executing task analyzer_analyze_repository_4427331872: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-04-30 12:32:13,501 - app.agents.orchestrator - INFO - Codebase processing complete for repo: https://github.com/amodvardhan/ne-geo-portal.git
+2025-04-30 12:32:13,501 - app.api.routes - INFO - Analysis completed for repository: https://github.com/amodvardhan/ne-geo-portal.git
