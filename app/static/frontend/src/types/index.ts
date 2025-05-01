@@ -111,3 +111,13 @@ export interface SearchResults {
     query: string;
     results: CodeSearchResult[];
 }
+
+
+export interface GeneratedFile {
+    path: string;
+    content: string;
+}
+export interface DeveloperOutput {
+    service_name: string;
+    files: GeneratedFile[];
+}

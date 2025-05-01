@@ -108,6 +108,10 @@ async def get_analysis_results(repo_id: str):
             else analyzer_result.get(field, default)
         )
 
+    developer_outputs = [
+        v for k, v in results.items() if k.startswith("developer_refactor_code")
+    ]
+
     return {
         "repo_id": repo_id,
         "repo_url": analysis_data["repo_url"],
@@ -121,6 +125,7 @@ async def get_analysis_results(repo_id: str):
             "api_endpoints": merged_field("api_endpoints", []),
             "dependencies": merged_field("dependencies", []),
             "semantic_insights": merged_field("semantic_insights", {}),
+            "developer_outputs": developer_outputs,  # <-- ADD THIS LINE
         }
     }
 

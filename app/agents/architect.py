@@ -65,28 +65,24 @@ class ArchitectAgent:
             }
 
     def _prepare_boundary_detection_prompt(self, analysis_results: Dict[str, Any]) -> str:
-        prompt = "Based on the following code analysis, identify logical microservice boundaries:\n\n"
-        prompt += f"Architecture Type: {analysis_results.get('architecture_type', 'Unknown')}\n"
-        prompt += "\nPotential Services from Analysis:\n"
-        for service in analysis_results.get('potential_services', []):
-            prompt += f"- {service.get('name')}\n"
-            prompt += f"  - Entities: {', '.join(service.get('entities', []))}\n"
-        prompt += "\nEntities:\n"
-        for entity in analysis_results.get('entities', [])[:10]:
+        prompt = "Based on the following code analysis, identify logical microservice boundaries.\n"
+        prompt += "Entities:\n"
+        for entity in analysis_results.get("entities", []):
             prompt += f"- {entity.get('name')} ({entity.get('type', 'class')})\n"
-        prompt += "\nAPI Endpoints:\n"
-        for endpoint in analysis_results.get('api_endpoints', [])[:10]:
-            prompt += f"- {endpoint.get('method', 'GET')} {endpoint.get('route')}\n"
-        prompt += "\nPlease identify logical microservice boundaries based on the following principles:\n"
-        prompt += "1. Domain-Driven Design (DDD) concepts\n"
-        prompt += "2. High cohesion and low coupling\n"
-        prompt += "3. Single Responsibility Principle\n"
-        prompt += "4. Business capabilities\n\n"
-        prompt += "For each identified microservice, provide:\n"
-        prompt += "1. Service name\n"
-        prompt += "2. Description\n"
-        prompt += "3. Key responsibilities\n"
-        prompt += "4. Core entities/models\n"
-        prompt += "5. API endpoints\n"
-        prompt += "6. Communication patterns with other services\n"
+        prompt += "API Endpoints:\n"
+        for endpoint in analysis_results.get("api_endpoints", []):
+            prompt += f"- {endpoint.get('route', '')}\n"
+        prompt += "Potential Services:\n"
+        for svc in analysis_results.get("potential_services", []):
+            prompt += f"- {svc.get('name')}\n"
+        prompt += (
+            "\nReturn your answer as a valid JSON object matching this schema:\n"
+            "{\n"
+            "  \"service_boundaries\": [ ... ],\n"
+            "  \"rationale\": string,\n"
+            "  \"communication_patterns\": [ ... ]\n"
+            "}\n"
+            "Do NOT return an empty list unless there are truly no possible boundaries."
+        )
         return prompt
+
