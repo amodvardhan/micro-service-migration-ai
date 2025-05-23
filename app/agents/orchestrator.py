@@ -1,6 +1,7 @@
 # app/orchestrator.py
 from typing import Dict, List, Any, Optional, Callable
 import logging
+import asyncio
 
 logger = logging.getLogger(__name__)
 
@@ -85,6 +86,9 @@ class AgentOrchestrator:
             for task in follow_up_tasks:
                 self.task_queue.add_task(task)
 
+        # Validate complete file coverage after all tasks
+        self._validate_complete_coverage(results, parsed_files)
+        
         logger.info(f"Codebase processing complete for repo: {repo_url}")
         return results
 
@@ -101,21 +105,143 @@ class AgentOrchestrator:
         elif task.agent == 'architect' and task.action == 'identify_service_boundaries':
             analysis_results = result.get('analysis_results', result)
             service_list = analysis_results.get('service_boundaries') or analysis_results.get('potential_services', [])
+            
+            # Ensure complete file mapping before creating developer tasks
+            service_list = self._ensure_complete_file_mapping(service_list, parsed_files)
+            
             for service in service_list:
-                # Only pass files relevant to this service
                 files_for_service = {
                     f: parsed_files[f]
                     for f in service.get("files", [])
                     if f in parsed_files
                 }
-                follow_up_tasks.append(Task(
-                    agent='developer',
-                    action='refactor_code',
-                    params={
-                        'service_boundary': service,
-                        'original_code': files_for_service
-                    }
-                ))
+                
+                # Only create developer task if service has files
+                if files_for_service:
+                    follow_up_tasks.append(Task(
+                        agent='developer',
+                        action='refactor_code',
+                        params={
+                            'service_boundary': service,
+                            'original_code': files_for_service
+                        }
+                    ))
+                else:
+                    logger.warning(f"Service '{service.get('name')}' has no files mapped to it")
 
         return follow_up_tasks
 
+    def _ensure_complete_file_mapping(self, service_list: List[Dict], parsed_files: Dict[str, Any]) -> List[Dict]:
+        """Ensure every file is mapped to a service"""
+        all_service_files = set()
+        for service in service_list:
+            all_service_files.update(service.get("files", []))
+        
+        unassigned_files = set(parsed_files.keys()) - all_service_files
+        if unassigned_files:
+            # Create a shared/unassigned service for unmapped files
+            shared_service = {
+                "name": "SharedOrUnassigned",
+                "description": "Files not mapped to any specific service",
+                "responsibilities": ["Shared utilities", "Configuration files", "Build scripts"],
+                "entities": [],
+                "apis": [],
+                "files": list(unassigned_files)
+            }
+            service_list.append(shared_service)
+            logger.warning(f"{len(unassigned_files)} files were not mapped to any service. Assigning to 'SharedOrUnassigned'.")
+        
+        return service_list
+
+    def _validate_complete_coverage(self, results: Dict[str, Any], parsed_files: Dict[str, Any]):
+        """Validate that all files were processed by developer agents"""
+        developer_outputs = [
+            v for k, v in results.items() 
+            if k.startswith("developer_refactor_code") and isinstance(v, dict) and "files" in v
+        ]
+        
+        if not developer_outputs:
+            logger.error("No developer outputs found - no code was generated")
+            return
+        
+        # Count files in developer outputs
+        all_generated_files = set()
+        total_generated_files = 0
+        
+        for dev_output in developer_outputs:
+            service_name = dev_output.get("service_name", "Unknown")
+            files = dev_output.get("files", [])
+            
+            if not files or (len(files) == 1 and files[0].get("path") == "README.txt"):
+                logger.warning(f"Service '{service_name}' only generated README.txt - no actual code generated")
+            else:
+                for f in files:
+                    if isinstance(f, dict) and "path" in f:
+                        all_generated_files.add(f["path"])
+                        total_generated_files += 1
+                logger.info(f"Service '{service_name}' generated {len(files)} files")
+        
+        logger.info(f"Total files in repository: {len(parsed_files)}")
+        logger.info(f"Total generated files across all services: {total_generated_files}")
+        logger.info(f"Unique generated file paths: {len(all_generated_files)}")
+        
+        # Check for services that failed to generate code
+        failed_services = []
+        successful_services = []
+        
+        for dev_output in developer_outputs:
+            service_name = dev_output.get("service_name", "Unknown")
+            files = dev_output.get("files", [])
+            
+            if not files or (len(files) == 1 and files[0].get("path") in ["README.txt", "README.md"] and 
+                           "Error generating code" in files[0].get("content", "")):
+                failed_services.append(service_name)
+            else:
+                successful_services.append(service_name)
+        
+        if failed_services:
+            logger.error(f"Services that failed to generate code: {failed_services}")
+        
+        if successful_services:
+            logger.info(f"Services that successfully generated code: {successful_services}")
+        else:
+            logger.error("No services successfully generated code - check DeveloperAgent implementation")
+
+    async def get_processing_summary(self, results: Dict[str, Any]) -> Dict[str, Any]:
+        """Get a summary of the processing results"""
+        summary = {
+            "total_tasks": len(results),
+            "successful_tasks": 0,
+            "failed_tasks": 0,
+            "services_identified": 0,
+            "services_with_code": 0,
+            "services_failed": 0,
+            "task_breakdown": {}
+        }
+        
+        for task_id, result in results.items():
+            agent_name = task_id.split('_')[0]
+            
+            if agent_name not in summary["task_breakdown"]:
+                summary["task_breakdown"][agent_name] = {"success": 0, "failed": 0}
+            
+            if isinstance(result, dict) and "error" in result:
+                summary["failed_tasks"] += 1
+                summary["task_breakdown"][agent_name]["failed"] += 1
+            else:
+                summary["successful_tasks"] += 1
+                summary["task_breakdown"][agent_name]["success"] += 1
+                
+                # Count services
+                if agent_name == "architect":
+                    service_boundaries = result.get("service_boundaries", [])
+                    summary["services_identified"] = len(service_boundaries)
+                
+                elif agent_name == "developer":
+                    files = result.get("files", [])
+                    if files and not (len(files) == 1 and files[0].get("path") == "README.txt"):
+                        summary["services_with_code"] += 1
+                    else:
+                        summary["services_failed"] += 1
+        
+        return summary
